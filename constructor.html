@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>CONS</title> 
+    </head>
+    <script>
+ 
+// ================================================================
+// ----->>>>CONSTRUCTOR
+function person(name,course,age,language){
+    this.name ='vibhu',
+    this.course='react',
+    this.age=23,
+    this.language='eng'
+
+}
+// carete new key word using create newe object
+const person1= new person();
+const person2= new person();
+
+console.log(person1.name);
+console.log(person1);//ful object get
+console.log(person2.age);
+
+
+
+
+function personAdd(first,course,age,lan){
+    this.name =first,
+    this.course=course,
+    this.age=age,
+    this.language=lan
+
+}
+// carete new key word using create newe object
+const personAdd1= new personAdd('vibhu','Guj',23);//upr je index wise nakhi hoy te j nakhvi pde 
+const personAdd2= new personAdd('keshav','react',34);
+personAdd.city='bhavnagr';
+
+console.log(personAdd2.name);
+console.log(personAdd1);//ful object get
+console.log(personAdd1.age);
+console.log(personAdd.city);    
+
+
+
+const   otherperson={
+first:'vibhu',
+lname:'joe',
+language:'No',
+set lang(value){
+    this.language=value;
+}
+};
+otherperson.lang="Eng";
+console.log("hi",otherperson.language);
+
+
+     </script>
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Two Variable Add,Sub,Mul,Div</title>
+  </head>
+  <body>
+    <script>
+      const num1 = parseInt(prompt(`Enter your favourite first number`));
+      const num2 = parseInt(prompt(`Enter your favourite second number`));
+      total();
+
+      function total() {
+        sum();
+        sub();
+        divMul();
+      }
+
+      function sum() {
+        const sum = num1 + num2;
+        console.log(`The sum of ${num1} and ${num2} and the sum  is ${sum}`);
+      }
+
+      function sub() {
+        const sum = num1 - num2;
+        console.log(`The sum of ${num1} and ${num2} and the sub  is ${sum}`);
+      }
+
+      function divMul() {
+        const sum = num1 * num2;
+        const sum1 = num1 / num2;
+        let text = `mul = ` + sum + `, div = ` + sum1;
+        console.log(`The mul and div of ${text}`);
+      }
+    </script>
+  </body>
+</html>

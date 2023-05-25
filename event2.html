@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EVENT </title>
+</head>
+
+<body>
+   
+
+    <!-- <button type="button" onclick="log()">CLICK ME</button> -->
+    <button id="start">Start</button>
+<div id="shape">This is the shape element.</div>
+<br>
+<input type="text" id="myInput">
+<p id="output"></p>
+<div id="myElement"></div>
+<input type="text" id="myInput" onchange="handleInputChange()">
+    <script>
+     
+
+
+
+var input=document.getElementById('myInput');
+var output=document.getElementById('output');
+
+input.addEventListener('keydown',function(event){
+    output.innerHTML='keydown'+event.key;
+});
+
+input.addEventListener('keyup',function(event){
+    output.innerHTML='keyup'+event.key;
+});
+
+input.addEventListener('mouseout',function(event){
+    input.style.backgroundColor='lightgreen';
+    output.innerHTML='hello mouseout';
+});
+
+input.addEventListener('mouseover',function(event){
+    input.style.backgroundColor='lightblue';
+    output.innerHTML='hello mouseover';
+});
+
+window.onload=function(){
+    console.log('page load successfully');
+};
+
+function handleInputChange(){
+    var input=document.getElementById('myInput');
+    var value=input.value;
+    console.log('input change',value);
+}
+
+
+
+
+
+
+     
+    </script>
+</body>
+
+</html>
